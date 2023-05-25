@@ -1,0 +1,171 @@
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/**
+   * Make all elements from the DOM inherit from the parent box-sizing
+   * Since `*` has a specificity of 0, it does not override the `html` value
+   * making all elements inheriting from the root box-sizing value
+   * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+   */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+/**
+   * Basic styles for links
+   */
+a {
+  text-decoration: none;
+}
+
+/**
+   * Basic styles for images
+   */
+img {
+  object-fit: cover;
+}
+
+/**
+   * Basic styles for list
+   */
+ul,
+li {
+  list-style-type: none;
+}
+
+@font-face {
+  font-family: "alegreyaregular";
+  src: url("/assets/fonts/alegreya-variablefont_wght-webfont.woff2") format("woff2"), url("/assets/fonts/alegreya-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "roboto_monoregular";
+  src: url("/assets/fonts/robotomono-variablefont_wght-webfont.woff2") format("woff2"), url("/assets/fonts/robotomono-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "alegreyaregular";
+}
+
+body {
+  font-family: "roboto_monoregular";
+}
+
+.header {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  height: 3.75rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  grid-gap: 1.25rem;
+  border-bottom: 1px solid #000000;
+}
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+  }
+}
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+@media only screen and (min-device-width: 1240px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header {
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+.header__logo {
+  grid-column-start: 1;
+}
+.header__timezone {
+  justify-self: center;
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  border: 1px solid #000000;
+  border-radius: 1px;
+  width: 5.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 0.25rem;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-70%);
+  }
+}
+.header__timezone span {
+  display: inline-block;
+  animation: slide 10s linear infinite;
+  transition: ease-out;
+}
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header__timezone {
+    display: block;
+    grid-column-start: 5;
+  }
+}
+@media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header__timezone {
+    grid-column-start: 7;
+  }
+}
+.header__menuBtn {
+  grid-column-start: -1;
+  display: grid;
+}
+.header__menuBtn img {
+  grid-row: 1;
+  grid-column: 1;
+}
+.header__menuBtn .closeMenu {
+  opacity: 0;
+}
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header__menuBtn {
+    display: none;
+  }
+}
+.header__menu {
+  display: none;
+  grid-column-end: -1;
+}
+.header__menu a {
+  color: inherit;
+  font-family: "roboto_monoregular";
+  font-weight: 500;
+}
+@media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .header__menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

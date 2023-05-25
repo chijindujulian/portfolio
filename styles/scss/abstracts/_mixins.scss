@@ -1,0 +1,14 @@
+@mixin margin {
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+
+  @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+    padding-inline-start: 2rem;
+    padding-inline-end: 2rem;
+  }
+
+  @media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
+  }
+}
