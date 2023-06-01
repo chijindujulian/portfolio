@@ -1,3 +1,3 @@
 //import timezone data
 import { getCurrentTimezoneInTimezone } from "./modules/header.js";
-import { heroTimezone } from "./modules/hero.js";
+import { animation } from "./modules/animation.js";

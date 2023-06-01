@@ -27,6 +27,9 @@ const timezoneSpanElement = timezoneContainer.querySelector('span');
 //get svg image path and create object
 const imageUrl = '/assets/images/gear.svg';
 const svgImage = document.createElement('object');
+svgImage.setAttribute('type', 'image/svg+xml');
+svgImage.setAttribute('data', imageUrl);
+svgImage.setAttribute('aria-label', 'gear-icon')
 svgImage.data = imageUrl;
 
 //create container for svg Image
@@ -34,7 +37,7 @@ const svgContainer = document.createElement('div');
 svgContainer.appendChild(svgImage);
 
 //create container for time
-svgContainer.innerHTML += ` Nigerian time ${time} `;
+svgContainer.innerHTML += ` Local time ${time} `;
 svgContainer.appendChild(svgImage);
 
 //create container for gmt

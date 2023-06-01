@@ -1,0 +1,9 @@
+
+.footer {
+    @include margin;
+    @include spacing-40;
+    text-transform: uppercase;
+    font-size: 0.625rem;
+    display: flex;
+    justify-content: space-between;
+}

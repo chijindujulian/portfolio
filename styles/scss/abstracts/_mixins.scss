@@ -1,4 +1,19 @@
 @mixin margin {
+  margin-inline-start: 1rem;
+  margin-inline-end: 1rem;
+
+  @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
+    margin-inline-start: 2rem;
+    margin-inline-end: 2rem;
+  }
+
+  @media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
+    margin-inline-start: 2.5rem;
+    margin-inline-end: 2.5rem;
+  }
+}
+
+@mixin padding {
   padding-inline-start: 1rem;
   padding-inline-end: 1rem;
 
@@ -11,4 +26,23 @@
     padding-inline-start: 2.5rem;
     padding-inline-end: 2.5rem;
   }
+}
+
+
+/*spacing*/
+
+@mixin spacing-10 {
+  margin-block-end: 0.625rem;
+}
+
+@mixin spacing-20 {
+  margin-block-end: 1.25rem;
+}
+
+@mixin spacing-40 {
+  margin-block-end: 2.5rem;
+}
+
+@mixin spacing-80 {
+  margin-block-end: 5rem;
 }

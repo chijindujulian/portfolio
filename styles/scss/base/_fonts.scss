@@ -1,18 +1,37 @@
 
+
 @font-face {
-    font-family: 'alegreyaregular';
-    src: url('/assets/fonts/alegreya-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/assets/fonts/alegreya-variablefont_wght-webfont.woff') format('woff');
+    font-family: 'roboto_monomedium';
+    src: url('/assets/fonts/robotomono-medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/robotomono-medium-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 
 }
 
+
+
+
 @font-face {
     font-family: 'roboto_monoregular';
-    src: url('/assets/fonts/robotomono-variablefont_wght-webfont.woff2') format('woff2'),
-         url('/assets/fonts/robotomono-variablefont_wght-webfont.woff') format('woff');
+    src: url('/assets/fonts/robotomono-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/robotomono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alegreyaextrabold';
+    src: url('/assets/fonts/alegreya-extrabold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/alegreya-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 
 }

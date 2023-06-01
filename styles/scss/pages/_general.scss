@@ -1,103 +1,27 @@
-h1 {
-  font-family: "alegreyaregular";
-}
+
 
 body {
   font-family: "roboto_monoregular";
+  background-color: $light
 }
 
-.header {
-  @include margin;
-  height: 3.75rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  align-items: center;
-  grid-gap: 1.25rem;
-  border-bottom: 1px solid $black;
+/*animation class*/
 
-  @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
-    grid-template-columns: repeat(8, 1fr);
-    column-gap: 1.5rem;
-  }
+.hidden {
+  opacity: 0;
+  filter: blur(2px);
+  transform: translateX(-100%);
+  transition: all 3s ease-out;
+}
 
-  @media only screen and (min-device-width: 1240px) and (-webkit-min-device-pixel-ratio: 1) {
-    grid-template-columns: repeat(12, 1fr);
-    column-gap: 1.5rem;
-  }
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
-  &__logo {
-    grid-column-start: 1;
-  }
-
-  &__timezone {
-    justify-self: center;
-    text-transform: uppercase;
-    font-size: 0.625rem;
-    border: 1px solid $black;
-    border-radius: 1px;
-    width: 5.5rem;
-    overflow: hidden;
-    white-space: nowrap;
-    padding: 0.25rem;
-
-    @keyframes slide {
-      0% {
-        transform: translateX(0);
-      }
-
-      100% {
-        transform: translateX(-70%);
-      }
-    }
-
-    span {
-      display: inline-block;
-      animation: slide 10s linear infinite;
-      transition: ease-out;
-    }
-
-    @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
-      display: block;
-      grid-column-start: 5;
-    }
-
-    @media only screen and (min-device-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-      grid-column-start: 7;
-    }
-  }
-
-  &__menuBtn {
-    grid-column-start: -1;
-    display: grid;
-
-    img {
-      grid-row: 1;
-      grid-column: 1;
-    }
-
-    .closeMenu {
-      opacity: 0;
-    }
-
-    @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
-      display: none;
-    }
-  }
-
-  &__menu {
-    display: none;
-    grid-column-end: -1;
-
-    a {
-      color: inherit;
-      font-family: "roboto_monoregular";
-      font-weight: 500;
-    }
-
-    @media only screen and (min-device-width: 600px) and (-webkit-min-device-pixel-ratio: 1) {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 1.5rem;
-    }
+@media(prefers-reduced--motion) {
+  .hidden {
+    transition: none;
   }
 }
