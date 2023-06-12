@@ -20,17 +20,18 @@ const timeZone = 'Africa/Lagos';
 const currentTime = getCurrentTimezoneInTimezone(timeZone);
 const time = (`${currentTime}`);
 
-//div element containg local timezone
+//div element containing local timezone
 const timezoneContainer = document.getElementById("timezone");
 const timezoneSpanElement = timezoneContainer.querySelector('span');
 
 //get svg image path and create object
 const imageUrl = '/assets/images/gear.svg';
-const svgImage = document.createElement('object');
-svgImage.setAttribute('type', 'image/svg+xml');
-svgImage.setAttribute('data', imageUrl);
-svgImage.setAttribute('aria-label', 'gear-icon')
-svgImage.data = imageUrl;
+const svgImage = document.createElement('img');
+svgImage.src = imageUrl;
+svgImage.alt = 'gear-icon';
+svgImage.width = 8;
+svgImage.height = 8;
+svgImage.setAttribute('aria-label', 'gear-icon');
 
 //create container for svg Image
 const svgContainer = document.createElement('div');

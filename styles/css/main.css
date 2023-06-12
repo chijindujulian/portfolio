@@ -362,6 +362,7 @@ li {
 .projects__list img {
   margin-block-end: 1.25rem;
   max-width: 100%;
+  height: auto;
 }
 .projects__list h3 {
   margin-inline-start: 1rem;
