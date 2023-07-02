@@ -1,1 +1,207 @@
-<!doctype html><html lang=en><meta charset=UTF-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="Chijindu Julian is a front-end web developer passionate about creating simple, minimalist and impactful websites utilising HTML, SCSS, and JavaScript. Explore my work and skills in frontend development, responsive design, and user experience to create engaging web experiences."><title>Chijindu Julian</title><link rel=stylesheet href=styles/css/main.css><link rel=icon type=image/png href=/assets/images/favicon.svg><header class=header><a href=/ class=header__logo><img src=assets/images/logo.svg alt=logo width=128 height=32></a><div class=header__timezone id=timezone><span></span></div><div class=header__menuBtn><img src=/assets/images/openMenu.svg alt=openMenu class=openMenu width=24 height=24> <img src=/assets/images/closeMenu.svg alt=closeMenu class=closeMenu width=24 height=24></div><nav class=header__menu><a href=/projects>projects(6)</a> <a href=/about>about</a> <a href=/contact>contact</a></nav></header><div id=app><section class="hero hidden" id=hero><main><div class="hero__quotes hero__item"><p>there is inherent pleasure and pain in the process of creation, more so in creating websites and software.</div><div class=hero__profile><div class="hero__profile--heading hero__item"><h1>hi, i'm</h1><h1>chijindu</h1><h1 class=skill>front-end</h1><h1>web developer</h1></div><div class="hero__profile--aside hero__item"><div><p>user interface designer<p>technical writer</div><div><p>@ omoo web studio</div><div><p>based in<p>nigeria</div></div></div></main></section><section class="projects hidden"><h2 class=projects__heading>featured projects</h2><div class=projects__list><div class="projects__list--item project1"><a href=#><img src=/assets/images/dimm.png alt=dimm-street width=800 height=600></a><h3>dimm street</h3><div class=projects__list--item-work><p>website design<p>website development</div></div><div class="projects__list--item project2"><a href=#><img src=/assets/images/dimm.png alt=dimm-street width=800 height=600></a><h3>dimm street</h3><div class=projects__list--item-work><p>website design<p>website development</div></div></div></section><section class="contact hidden"><h2 class=contact__heading>lets build the <span>next big thing</span> together</h2><div class=contact__container><a href=# class=contact__btn>send a message via email</a></div><div><h3>reach out<br><span>via social media</span></h3><div class=contact__icons><img class=hidden src=/assets/images/behance.svg alt=behance-logo width=38 height=24> <img class=hidden src=/assets/images/instagram.svg alt=behance-logo width=24 height=24> <img class=hidden src=/assets/images/telegram.svg alt=behance-logo width=24 height=24> <img class=hidden src=/assets/images/twitter.svg alt=behance-logo width=30 height=24> <img class=hidden src=/assets/images/whatsapp.svg alt=behance-logo width=24 height=24></div></div><div class=contact__social><ul><a class=hidden href=""><li><span>01</span> <span>behance</span> <span>@losndu</span></a><a class=hidden href=""><li><span>02</span> <span>instagram</span> <span>@losndu</span></a><a class=hidden href=""><li><span>03</span> <span>telegram</span> <span>@losndu</span></a><a class=hidden href=""><li><span>04</span> <span>twitter</span> <span>@losndu</span></a><a class=hidden href=""><li><span>05</span> <span>whatsapp</span> <span>@losndu</span></a></ul></div></section></div><footer class=footer><p>©2023 Chijindu Julian, All Rights Reserved<p>v1.0</footer><script type=module src=scripts/main.js></script>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Chijindu Julian is a front-end web developer passionate about creating simple, minimalist and impactful websites utilising HTML, SCSS, and JavaScript. Explore my work and skills in frontend development, responsive design, and user experience to create engaging web experiences.">
+    <title>Chijindu Julian</title>
+    <link rel="stylesheet" href="styles/css/main.css">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.svg">
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/" class="header__logo">
+            <img src="assets/images/logo.svg" alt="logo" width="128" height="32">
+        </a>
+
+        <div class="header__timezone" id="timezone">
+            <span></span>
+        </div>
+
+        <div class="header__menuBtn">
+            <img src="/assets/images/openMenu.svg" alt="openMenu" class="openMenu" width="24" height="24">
+            <img src="/assets/images/closeMenu.svg" alt="closeMenu" class="closeMenu" width="24" height="24">
+        </div>
+        <nav class="header__menu">
+            <a href="/projects">projects(6)</a>
+            <a href="/about">about</a>
+            <a href="/contact">contact</a>
+        </nav>
+    </header>
+
+    <div id="app">
+
+        <section class="hero hidden" id="hero">
+            <main>
+
+                <div class="hero__quotes hero__item">
+                    <p>
+                        there is inherent pleasure and pain in the process of creation, more so in creating websites and
+                        software.
+                    </p>
+                </div>
+
+                <div class="hero__profile">
+
+                    <div class="hero__profile--heading hero__item">
+                        <h1>hi, i'm</h1>
+                        <h1>chijindu</h1>
+                        <h1 class="skill">front-end</h1>
+                        <h1>web developer</h1>
+                    </div>
+
+                    <div class="hero__profile--aside hero__item">
+                        <div>
+                            <p>user interface designer</p>
+                            <p>technical writer</p>
+                        </div>
+
+                        <div>
+                            <p>@ omoo web studio</p>
+                        </div>
+
+                        <div>
+                            <p>based in</p>
+                            <p>nigeria</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </main>
+        </section>
+        <!--
+            
+        <section class="about hidden" id="about">
+
+            <div class="about__image">
+                <img class="bwImage" src="/assets/images/ndu2.png" alt="chijindu-julian" width="">
+            </div>
+
+            <p>
+                Before my advent into software technology and web devlopment, I've always been intrigued and curious
+                about what goes on behind the scenes of applications and hardware that run on software.
+            </p>
+
+            <p>
+                create new things, unique experiences, getting into web development changed a lot
+                of things for me, and since then, I try to push my work to new horizons with each project, always
+                putting quality first.
+            </p>
+
+            
+
+
+            <p class="about__me about__me1">
+                A nigerian creative and self-taught front-end developer. deeply passionate about
+                linux
+                and open-source technologies, i create custom websites and solutions for individuals and brands to
+                communicate their offerings and values on the internet
+            </p>
+
+            <p class="about__me about__me2">
+                outside work, i enjoy cooking and experimenting with new dishes i see online, listening to music,
+                and
+                watching tv shows
+            </p>
+            
+        </section>
+
+-->
+        <section class="projects hidden">
+
+            <h2 class="projects__heading">featured projects</h2>
+
+            <div class="projects__list">
+                <div class="projects__list--item project1">
+
+                    <a href="#">
+                        <img src="/assets/images/dimm.png" alt="dimm-street" width="800" height="600">
+                    </a>
+
+                    <h3>dimm street</h3>
+
+                    <div class="projects__list--item-work">
+                        <p>website design</p>
+                        <p>website development</p>
+                    </div>
+                </div>
+
+                <div class="projects__list--item project2">
+                    
+                    <a href="#">
+                        <img src="/assets/images/omoo.png" alt="dimm-street" width="800" height="600">
+                    </a>
+
+                    <h3>omoo studio</h3>
+
+                    <div class="projects__list--item-work">
+                        <p>website design</p>
+                        <p>website development</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class=" contact hidden">
+            <h2 class="contact__heading">
+                lets build the <span>next big thing</span> together
+            </h2>
+
+            <div class="contact__container">
+                <a href="#" class="contact__btn">
+                    send a message via email
+                </a>
+            </div>
+
+            <div>
+                <h3>reach out <br><span>via social media</span></h3>
+
+                <div class="contact__icons">
+                    <img class="hidden" src="/assets/images/behance.svg" alt="behance-logo" width="38" height="24">
+                    <img class="hidden" src="/assets/images/instagram.svg" alt="behance-logo" width="24" height="24">
+                    <img class="hidden" src="/assets/images/telegram.svg" alt="behance-logo" width="24" height="24">
+                    <img class="hidden" src="/assets/images/twitter.svg" alt="behance-logo" width="30" height="24">
+                    <img class="hidden" src="/assets/images/whatsapp.svg" alt="behance-logo" width="24" height="24">
+                </div>
+            </div>
+
+            <div class="contact__social">
+                <ul>
+                    <a class="hidden" href="">
+                        <li><span>01</span> <span>behance</span> <span>@losndu</span></li>
+                    </a>
+                    <a class="hidden" href="">
+                        <li><span>02</span> <span>instagram</span> <span>@losndu</span></li>
+                    </a>
+                    <a class="hidden" href="">
+                        <li><span>03</span> <span>telegram</span> <span>@losndu</span></li>
+                    </a>
+                    <a class="hidden" href="">
+                        <li><span>04</span> <span>twitter</span> <span>@losndu</span></li>
+                    </a>
+                    <a class="hidden" href="">
+                        <li><span>05</span> <span>whatsapp</span> <span>@losndu</span></li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>©2023 Chijindu Julian, All Rights Reserved <!--<a href="#">• Technologies</a>--></p>
+
+        <p>v1.0</p>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+
+</html>
